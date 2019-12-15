@@ -1,0 +1,39 @@
+{
+  "name": "web3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --fix  --ext .js,.vue src",
+    "watch": "webpack --progress --watch",
+    "start": "wbWebpack start",
+    "test": "wbWebpack test",
+    "build": "wbWebpack build",
+    "dev": "wbWebpack develop"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "src/**/*.less": [
+      "stylelint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "husky": "^2.3.0",
+    "lint-staged": "^7.2.2",
+    "stylelint": "^10.0.1"
+  },
+  "dependencies": {
+    "front-common": "git+ssh://git@git.wb-intra.com:web_group/front-common.git",
+    "front-base-webpack": "git+ssh://git@git.wb-intra.com:web_group/front-base-webpack.git"
+  }
+}
