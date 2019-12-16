@@ -1,5 +1,0 @@
-builds/*.js
-config/*.js
-node_modules
-webpack
-src/common
