@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/hpstream/vue-cli-plugin-hp-mobile/issues"
   },
-  "homepage": "https://github.com/hpstream/vue-cli-plugin-hp-mobile#readme"
+  "homepage": "https://github.com/hpstream/vue-cli-plugin-hp-mobile#readme",
+  "dependencies": {
+    "shelljs": "^0.8.3"
+  }
 }

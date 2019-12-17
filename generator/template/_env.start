@@ -1,0 +1,3 @@
+NODE_ENV=development
+VUE_APP_NODE_ENV=start
+PROXYURL=http://t1.zhuhuiyao.cn
